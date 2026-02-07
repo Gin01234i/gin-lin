@@ -1,0 +1,254 @@
+/* About Page Styles */
+
+.about-page {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+/* Bio Hero Section - Two column layout */
+.bio-hero {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 4rem;
+  margin-bottom: 5rem;
+  align-items: start;
+}
+
+.bio-image {
+  position: sticky;
+  top: 6rem;
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--color-border-primary);
+  border-radius: 2px;
+}
+
+.bio-content h1 {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.bio-content p {
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.bio-content p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Chinese text styling */
+.bio-content p.chinese {
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-border-secondary);
+  color: var(--color-text-tertiary);
+}
+
+/* Section styling */
+.about-page section {
+  margin-bottom: 5rem;
+}
+
+.about-page section:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.about-page h2 {
+  font-size: clamp(1.6rem, 4vw, 1.8rem);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+/* Work Experience */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border-secondary);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.experience-item h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-primary);
+}
+
+.experience-item .organization {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.experience-item .period {
+  font-size: 0.9rem;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+/* Press Section */
+.press-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+a.press-item {
+  display: block;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-border-secondary);
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+a.press-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+a.press-item:hover {
+  opacity: 0.7;
+}
+
+a.press-item::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--color-text-tertiary);
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+a.press-item:hover::after {
+  transform: translateX(4px);
+}
+
+.press-item h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-primary);
+}
+
+.press-item .article-title {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+/* Education Section */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.education-item h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: var(--color-text-primary);
+}
+
+.education-item .institution {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.15rem;
+}
+
+.education-item .year {
+  font-size: 0.9rem;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.02em;
+}
+
+/* CV Note */
+.cv-note {
+  font-size: 0.95rem;
+  color: var(--color-text-tertiary);
+  font-style: italic;
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--color-border-secondary);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .bio-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .bio-image {
+    position: static;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .bio-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .bio-content p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .bio-content p.chinese {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .about-page section {
+    margin-bottom: 3rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .experience-item h3,
+  .education-item h3,
+  .press-item h3 {
+    font-size: 1rem;
+  }
+
+  .press-item .article-title {
+    font-size: 0.95rem;
+  }
+
+  .cv-note {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+}

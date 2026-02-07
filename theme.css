@@ -1,0 +1,11 @@
+:root {
+  --color-bg:               #fafaf8;
+  --color-bg-translucent:   rgba(250, 250, 248, 0.95);
+  --color-text-primary:     #1a1a1a;
+  --color-text-secondary:   #4a4a4a;
+  --color-text-tertiary:    #666666;
+  --color-text-muted:       #999999;
+  --color-border-primary:   #e0e0e0;
+  --color-border-secondary: #e8e8e8;
+  --font-family-base:       'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
