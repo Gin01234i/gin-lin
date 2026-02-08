@@ -74,8 +74,9 @@
 }
 
 .experience-item {
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--color-border-secondary);
+  font-family: "Helvetica Neue";
+  padding-bottom: 7px;
+  /* border-bottom: 1px solid var(--color-border-secondary); */
 }
 
 .experience-item:last-child {
@@ -86,14 +87,12 @@
 .experience-item h3 {
   font-size: 1.1rem;
   font-weight: 500;
-  margin-bottom: 0.25rem;
   color: var(--color-text-primary);
 }
 
 .experience-item .organization {
   font-size: 1rem;
   color: var(--color-text-secondary);
-  margin-bottom: 0.25rem;
 }
 
 .experience-item .period {
@@ -110,9 +109,8 @@
 }
 
 a.press-item {
+  font-family: "Helvetica Neue";
   display: block;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--color-border-secondary);
   transition: opacity 0.3s;
   position: relative;
 }
@@ -126,31 +124,15 @@ a.press-item:hover {
   opacity: 0.7;
 }
 
-a.press-item::after {
-  content: "→";
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: var(--color-text-tertiary);
-  font-size: 1.1rem;
-  transition: transform 0.3s;
-}
-
-a.press-item:hover::after {
-  transform: translateX(4px);
-}
-
 .press-item h3 {
   font-size: 1.1rem;
   font-weight: 500;
-  margin-bottom: 0.25rem;
   color: var(--color-text-primary);
 }
 
 .press-item .article-title {
   font-size: 1rem;
   color: var(--color-text-secondary);
-  margin-bottom: 0.25rem;
 }
 
 /* Education Section */
@@ -159,11 +141,12 @@ a.press-item:hover::after {
   flex-direction: column;
   gap: 1.25rem;
 }
-
+.education-item {
+  font-family: "Helvetica Neue";
+}
 .education-item h3 {
   font-size: 1.05rem;
   font-weight: 500;
-  margin-bottom: 0.25rem;
   color: var(--color-text-primary);
 }
 
