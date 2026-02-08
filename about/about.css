@@ -27,7 +27,7 @@
   border-radius: 2px;
 }
 
-.bio-content, .ch {
+.bio-content {
   margin-left: 15px;
   font-family: "Helvetica Neue";
 }
@@ -60,7 +60,7 @@
 
 .about-page h2 {
   font-size: clamp(1.6rem, 4vw, 1.8rem);
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 2rem;
   letter-spacing: -0.01em;
   color: var(--color-text-primary);
@@ -70,28 +70,25 @@
 .experience-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .experience-item {
   font-family: "Helvetica Neue";
-  padding-bottom: 7px;
-  /* border-bottom: 1px solid var(--color-border-secondary); */
 }
 
 .experience-item:last-child {
   border-bottom: none;
-  padding-bottom: 0;
 }
 
 .experience-item h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-text-primary);
 }
 
 .experience-item .organization {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
 }
 
@@ -105,7 +102,7 @@
 .press-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 a.press-item {
@@ -125,13 +122,13 @@ a.press-item:hover {
 }
 
 .press-item h3 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-text-primary);
 }
 
 .press-item .article-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
 }
 
@@ -145,15 +142,14 @@ a.press-item:hover {
   font-family: "Helvetica Neue";
 }
 .education-item h3 {
-  font-size: 1.05rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-text-primary);
 }
 
 .education-item .institution {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--color-text-secondary);
-  margin-bottom: 0.15rem;
 }
 
 .education-item .year {
@@ -187,6 +183,10 @@ a.press-item:hover {
     margin: 0 auto;
   }
 
+  .bio-content {
+    margin-left: 0;
+  }
+
   .bio-content h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -207,7 +207,7 @@ a.press-item:hover {
 
   .about-page h2 {
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 1.5rem;
     margin-top: 0.5rem;
   }
@@ -215,7 +215,7 @@ a.press-item:hover {
   .experience-item h3,
   .education-item h3,
   .press-item h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .press-item .article-title {
