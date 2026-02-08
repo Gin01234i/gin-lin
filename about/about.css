@@ -160,13 +160,10 @@ a.press-item:hover {
 
 /* CV Note */
 .cv-note {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  font-family: "Helvetica Neue";
   color: var(--color-text-tertiary);
-  font-style: italic;
-  text-align: center;
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid var(--color-border-secondary);
+  text-align: left;
 }
 
 /* Mobile Responsive */
@@ -220,10 +217,5 @@ a.press-item:hover {
 
   .press-item .article-title {
     font-size: 0.95rem;
-  }
-
-  .cv-note {
-    margin-top: 2rem;
-    padding-top: 2rem;
   }
 }
