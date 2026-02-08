@@ -26,6 +26,7 @@ a {
 header {
   padding: 1.25rem 5%;
   border-bottom: 1px solid var(--color-border-primary);
+  background-color: var(--color-bg);
   position: sticky;
   top: 0;
   backdrop-filter: blur(10px);
