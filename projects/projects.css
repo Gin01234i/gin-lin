@@ -10,64 +10,65 @@
 
 .projects-section h2 {
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--color-border-primary);
+    font-size: clamp(1.6rem, 4vw, 1.8rem);
+    font-weight: 700;
     margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+    color: var(--color-text-primary);
 }
 
 /* Project Card — two-column grid */
 .project-card {
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 2.5rem;
+    grid-template-columns: 45% 45%;
+    gap: 4rem;
     padding: 3rem 0;
-    border-bottom: 1px solid var(--color-border-secondary);
 }
 
 .project-card:last-child {
     border-bottom: none;
 }
 
+.project-meta {
+    font-family: "Helvetica Neue";
+}
+
 /* Meta column */
 .project-meta h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 0.5rem;
     color: var(--color-text-primary);
 }
 
 .project-date {
     font-size: 0.9rem;
-    color: var(--color-text-tertiary);
+    color: var(--color-text-secondary);
     letter-spacing: 0.02em;
-    margin-bottom: 0.5rem;
 }
 
 .project-location {
     font-size: 0.9rem;
-    color: var(--color-text-tertiary);
-    margin-bottom: 1rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
 }
 
 .project-description {
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: var(--color-text-secondary);
     line-height: 1.7;
     margin-bottom: 1.25rem;
-    max-width: none;
+    max-width: 75%;
 }
 
-.project-link {
-    display: inline-block;
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-    border-bottom: 1px solid var(--color-border-primary);
-    padding-bottom: 2px;
-    transition: color 0.3s, border-color 0.3s;
+.project-meta-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
 }
 
-.project-link:hover {
-    color: var(--color-text-primary);
-    border-color: var(--color-text-primary);
+.project-meta-link:hover {
+    opacity: 0.6;
 }
 
 /* Carousel */
