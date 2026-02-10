@@ -264,23 +264,6 @@
             update();
         });
     })();
-
-    // Toggle layout direction for Selected Projects
-    (function() {
-        var sections = document.querySelectorAll('.projects-section');
-        var selected = sections[1];
-        if (!selected) return;
-        var heading = selected.querySelector('h2');
-        heading.style.cursor = 'pointer';
-        var flipped = false;
-
-        heading.addEventListener('click', function() {
-            flipped = !flipped;
-            selected.querySelectorAll('.project-meta').forEach(function(meta) {
-                meta.style.order = flipped ? '1' : '';
-            });
-        });
-    })();
     </script>
 </body>
 </html>
