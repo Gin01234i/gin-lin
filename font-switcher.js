@@ -1,13 +1,13 @@
 (function () {
   var STORAGE_KEY = 'gin-lin-font';
-  var DEFAULT_FONT = 'Inter';
+  var DEFAULT_FONT = 'Poppins';
   var FONTS = [
-    { name: 'Inter', label: 'Inter', desc: 'Current default' },
+    { name: 'Inter', label: 'Inter', desc: 'Clean and neutral' },
     { name: 'DM Sans', label: 'DM Sans', desc: 'Geometric, slightly softer' },
     { name: 'Outfit', label: 'Outfit', desc: 'Clean geometric, slightly wider' },
     { name: 'Montserrat', label: 'Montserrat', desc: 'Geometric, urban modernist' },
     { name: 'Roboto', label: 'Roboto', desc: 'Neo-grotesque, neutral and clean' },
-    { name: 'Poppins', label: 'Poppins', desc: 'Geometric, rounded and friendly' },
+    { name: 'Poppins', label: 'Poppins', desc: 'Current default' },
     { name: 'Lora', label: 'Lora', desc: 'Serif, elegant and editorial' },
     { name: 'Helvetica Neue', label: 'Helvetica Neue', desc: 'Classic Swiss neo-grotesque (system font)' }
   ];
