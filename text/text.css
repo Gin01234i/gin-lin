@@ -92,4 +92,10 @@
     .text-section {
         margin-bottom: 3rem;
     }
+
+    .text-section h2 {
+        font-size: 1.75rem;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+    }
 }
