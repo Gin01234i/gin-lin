@@ -24,9 +24,9 @@
 /* Text Card — two-column grid */
 .text-card {
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 2.5rem;
-    padding: 3rem 0;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
 }
 
 .text-card:last-child {
@@ -37,6 +37,7 @@
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 2px;
 }
 
 /* Meta column */
@@ -75,13 +76,17 @@
 /* Mobile */
 @media (max-width: 768px) {
     .text-card {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 2rem 0;
+        grid-template-columns: 120px 1fr;
+        gap: 1.25rem;
+        padding: 1.5rem 0;
     }
 
     .text-meta h3 {
-        font-size: 1.15rem;
+        font-size: 1rem;
+    }
+
+    .text-meta p {
+        font-size: 0.9rem;
     }
 
     .text-section {
