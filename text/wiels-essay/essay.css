@@ -64,6 +64,22 @@
     width: 100%;
 }
 
+.essay-body figure:has(img[src="images/1.webp"]) img {
+    width: 75%;
+}
+
+.essay-body figure:has(img[src="images/3.webp"]) img {
+    width: 75%;
+}
+
+.essay-body figure:has(img[src="images/6.webp"]) img {
+    width: 60%;
+}
+
+.essay-body figure:has(img[src="images/8.webp"]) img {
+    width: 60%;
+}
+
 .essay-body figcaption {
     font-size: 0.8rem;
     color: var(--color-text-muted);
