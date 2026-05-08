@@ -73,6 +73,12 @@
     border-color: var(--color-text-primary);
 }
 
+@media (min-width: 769px) {
+    .crossing-title {
+        margin-left: -8px;
+    }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .text-card {
