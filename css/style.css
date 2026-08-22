@@ -237,17 +237,19 @@ footer {
   }
 
   .header-content {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 0.6rem;
   }
 
   .nav-toggle {
     display: block;
-    align-self: flex-start;
+    margin-left: auto;
   }
 
   nav {
     display: none;
+    flex-basis: 100%;
     width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
