@@ -1,0 +1,55 @@
+/* Press Page Styles */
+
+.press-page {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+
+.press-page h1 {
+  font-size: clamp(1.25rem, 4vw, 1.4rem);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.press-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+a.press-item {
+  display: block;
+  position: relative;
+  font-family: "Helvetica Neue";
+  transition: opacity 0.3s;
+}
+
+a.press-item:hover {
+  opacity: 0.7;
+}
+
+.press-item h2 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: normal;
+  color: var(--color-text-primary);
+}
+
+.press-item .article-title {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 768px) {
+  .press-item h2 {
+    font-size: 0.9rem;
+  }
+
+  .press-item .article-title {
+    font-size: 0.95rem;
+  }
+}
