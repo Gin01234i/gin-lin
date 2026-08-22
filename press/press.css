@@ -45,6 +45,11 @@ a.press-item:hover {
 }
 
 @media (max-width: 768px) {
+  .press-page h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
   .press-item h2 {
     font-size: 0.9rem;
   }
